@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/artikel_list"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
@@ -8,23 +8,25 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="10dp"
-    android:elevation="12dp">
-    
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="130dp"
-        android:src="@drawable/a"
-        android:scaleType="fitXY"
-        android:id="@+id/artikel_gmbr"/>
+    android:elevation="12dp"
+    app:layout_constraintCircleRadius="1dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Kerajinan Tangan Motif Manik-manik Khas Suku Dayak Tamambalo"
-        android:padding="0dp"
-        android:gravity="center"
-        android:textSize="13dp"
-        android:textStyle="bold"
-        android:id="@+id/judul"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:src="@drawable/a"
+            android:scaleType="fitXY"
+            android:id="@+id/artikel_gmbr"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Kerajinan Tangan Motif Manik-manik Khas Suku Dayak Tamambalo"
+            android:padding="0dp"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:id="@+id/judul"/>
+
 
 </LinearLayout>
